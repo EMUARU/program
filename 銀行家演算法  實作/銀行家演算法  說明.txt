@@ -1,0 +1,17 @@
+　　設計理念:
+　　	主函式負責讀入資料 依序處理request
+　　	Bankers執行銀行家演算法 回傳是否成功分配資源
+　　	Safety執行安全性演算法 模擬時邊建立safe sequence 
+  回傳目前狀態是否安全
+		Valid判斷request是否Valid（滿足Need與Available的檢查）
+	完成部分:
+i. 正確讀入資料
+ii. 正確計算need
+iii. 能判斷初始狀態是否安全
+iv. 依照輸入順序執行request
+v. 若資源不足request釋放則放棄request
+vi. 釋放資源後立即依序檢查等待佇列中的request能否執行
+vii. 能判斷request是否Valid，是 則檢查安全性，否 則放棄request (正常情況應該是 不滿足Need檢查時捨棄 滿足Need檢查，不滿足Available檢查時等待 ; 但是題目說明為 Need或Available 只要有一個不符合就捨棄，故如此處理)
+viii. 若安全則分配資源 否則將目前request放入等待佇列
+ix. 使用work和finish正確模擬任務執行及資源釋放
+x. 建立正確的safe sequence
