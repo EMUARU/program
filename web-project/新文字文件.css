@@ -1,0 +1,25 @@
+.thintd{
+	width: 10px;
+	height: 40px;
+}
+.fattd{
+	width: 80px;
+	height: 40px;
+}
+.flattd{
+	height: 10px;
+}
+
+table,td{
+	color: white;
+	text-align: center;
+	border-collapse: collapse;
+	font-size: 25px;
+	/*border: solid black 1px;*/
+}
+
+body{
+	background-image: url("00.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}

@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+<html lang="en" class=""><meta content="text/html; charset=Big5" http-equiv="content-type" >	<link rel=stylesheet type="text/css" href="新文字文件.css">
+</head>
+
+<body onload="maketable();" id="body" >
+	
+	<table id="scoreboard" style="margin:auto;float:left;align:center;width:50%">
+<script type="application/javascript" src="1.js"></script>
+		<tr>
+			<td colspan=3 id="money" style="font-size:50px;">Your balance:$10000</td>
+		</tr>
+		
+		<tr>
+			<td><input type="radio" onclick="selectmoney(this)" name="paymoney" value="1"><img src="1.png" width="120px"></td>
+			<td><input type="radio" onclick="selectmoney(this)" name="paymoney" value="5"><img src="5.png" width="120px"></td>
+			<td><input type="radio" onclick="selectmoney(this)" name="paymoney" value="10"><img src="10.png" width="120px"></td>
+		</tr>
+		<tr>
+			<td><input type="radio" onclick="selectmoney(this)" name="paymoney" value="25"><img src="25.png" width="120px"></td>
+			<td><input type="radio" onclick="selectmoney(this)" name="paymoney"   value="10000000 "><img src="10000000.png" width="150px"></td>
+			<td><input type="radio" onclick="selectmoney(this)" name="paymoney" value="100"><img src="100.png" width="120px"></td>
+		</tr>
+		<tr>
+			<td><input type="radio" onclick="selectmoney(this)" name="paymoney" value="200"><img src="200.png" width="120px"></td>
+			<td><input type="radio" onclick="selectmoney(this)" name="paymoney" value="500"><img src="500.png" width="120px"></td>
+			<td><input type="radio" onclick="selectmoney(this)" name="paymoney" value="1000"><img src="1000.png" width="120px"></td>
+			
+		</tr>
+		
+			
+		
+				
+	</table>
+<canvas id="wheelcanvas" width="500" height="500" style="float:left;margin:0 8%;"></canvas>
+	<div style="clear:both;"></div>
+<div style="text-align:center;"><align="center"><font size="50px" color="white">   規則 : 選擇籌碼 -> 下注 -> 開始 </font></td></div>
+	<div style="text-align:center;"><align="center"><font size="50px" color="white">   賠率: 區塊及列(2倍), 單號(35倍), 雙號(17倍), 三號(11倍), 四號(8倍), 六號(5倍), 其餘(1倍)</font></td></div>
+
+
+	<table id="tb" style="margin:4% auto;">
+	</table>
+</table>
+</body>
+
+</html>
