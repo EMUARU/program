@@ -1,0 +1,3 @@
+make 後先執行server
+client 模擬正常client的行為
+client_without_open_fifo 模擬client沒有打開讀取端的行為
