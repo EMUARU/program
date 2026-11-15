@@ -1,6 +1,6 @@
 # HW10：共享記憶體生產者／消費者
 
-> 一個 producer 以固定速率產生訊息，放進 POSIX 共享記憶體中的環狀緩衝區，多個 consumer 行程同時讀取；用 semaphore 同步，並統計在不同參數下的封包遺失情形。
+> 一個 producer 以固定速率產生訊息，放進 POSIX 共享記憶體中只有 B 格的緩衝區（滿了就淘汰最舊的一筆），再以 `sigqueue` 送出 SIGUSR1、附帶訊息序號，通知多個 consumer 行程讀取，並統計在不同參數下的封包遺失情形（依作業要求採用 Shared Memory + signal）。
 
 ## 參數
 

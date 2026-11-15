@@ -15,7 +15,7 @@
 | [HW7](HW7/) | Signal | `sigsuspend` 與 `sigwaitinfo` 效能比較、自製 System V signal API |
 | [HW8](HW8/) | FIFO 與 System V 訊息佇列 | 防止惡意 client 卡住 FIFO server、非阻塞 FIFO、訊息佇列版序號伺服器 |
 | [HW9](HW9/) | 記憶體映射與 POSIX IPC | 用 `mmap` 實作 `cp`、POSIX 訊息佇列檔案伺服器、POSIX 共享記憶體 |
-| [HW10](HW10/) | 共享記憶體＋semaphore | 一對多的生產者／消費者，實驗不同參數下的封包遺失，附報告 |
+| [HW10](HW10/) | 共享記憶體＋signal | 一對多的生產者／消費者，以 `sigqueue` 帶序號通知 consumer，實驗不同參數下的封包遺失，附報告 |
 | [HW11](HW11/) | Socket | 字典查詢伺服器：UNIX domain socket、TCP、UDP 三種版本 |
 | [HW12](HW12/) | inotify | 遞迴監控目錄的新增、刪除與搬移 |
 
