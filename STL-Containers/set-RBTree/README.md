@@ -1,4 +1,4 @@
-# set（紅黑樹）
+# set-RBTree：以紅黑樹實作的 set
 
 > 以紅黑樹為底層的 `set<T>`，結構仿照 MSVC STL 的 `xtree`：以 head 節點同時作為 nil 節點，`head->parent` 指向根節點。
 
