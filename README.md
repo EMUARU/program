@@ -7,7 +7,7 @@
 | 專案 | 類型 | 說明 | 技術 |
 |---|---|---|---|
 | [系統程式設計](系統程式設計/) | 個人作業 | Linux 系統程式 12 份作業：自製 shell、pipe／I/O 重導、signal、IPC、socket 伺服器、生產者／消費者 | C、POSIX API、Makefile |
-| [STL-Containers](STL-Containers/) | C++ 實作 | 仿照 MSVC STL 內部結構實作 `vector`、`string`、`list`、`deque`、`unordered_set`，並以此實作大整數運算 | C++、類別樣板、迭代器 |
+| [STL-Containers](STL-Containers/) | C++ 實作 | 仿照 MSVC STL 內部結構實作 `vector`、`string`、`list`、`deque`、`set`（紅黑樹）、`unordered_set`，並以此實作大整數運算 | C++、類別樣板、迭代器 |
 | [Honinbo](Honinbo/) | 3 人團隊 | 可分析圍棋棋譜勝率的 Android App，在手機上直接執行神經網路推論，附聊天室 | Kotlin、Jetpack Compose、Firebase |
 | [Pokemon-Game](Pokemon-Game/) | 個人作品 | 在終端機上運行的寶可夢遊戲：地圖移動、捕捉、道館對戰 | C++、物件導向 |
 | [Tetris](Tetris/) | 課程期末專題 | 雙人對戰俄羅斯方塊，消除行數會對對手發動不同技能 | Java、Swing |
